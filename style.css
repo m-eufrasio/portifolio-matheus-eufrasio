@@ -305,7 +305,7 @@ a:hover {
 
 /* RESPONSIVE */
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
     /* DEIXA OS BOTOES DE LINKEDIN E GITHUB UM EM CIMA DO OUTRO (COLUMN) */
     .social-media {
@@ -315,7 +315,7 @@ a:hover {
 
     /* DEIXA A MARGIN DO CONTEUDO PRINCIPAL ZERADA EM RELAÇÃO AO HEADER */
     .container {
-        margin-top: 0;
+        margin-top: 0px;
     }
 
     /* DEIXA O CONTEUDO E O TEXTO EM CIMA DO OUTRO, NO TOTAL SÃO 3: GITHUB LINKEDIN E INSTAGRAM */
@@ -346,5 +346,12 @@ a:hover {
     .card:hover>.card-wrapper::before { /* .card-wrapper é a div que guarda o texto da imagem */
         height: 190px;
         width: 190px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .card {
+        height: 50px;
+        width: 50px;
     }
 }
